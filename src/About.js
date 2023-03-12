@@ -9,7 +9,7 @@ export const About = () => {
     return(
         <main>
             <section className="welcome_section">
-                <img className="bg" src={about}></img>
+                <img alt="about us"className="bg" src={about}></img>
                 <VisibilityDiv classname="welcome_text">
                     <h1 className="welcome_eng">About us</h1>
                 </VisibilityDiv>

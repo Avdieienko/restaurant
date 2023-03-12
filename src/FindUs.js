@@ -10,7 +10,7 @@ export const FindUs = () => {
     return(
         <main>
             <section className="welcome_section">
-                <img className="bg" src={find}></img>
+                <img alt="find us" className="bg" src={find}></img>
                 <VisibilityDiv classname="welcome_text">
                     <h1 className="welcome_eng">Find us</h1>
                 </VisibilityDiv>

@@ -14,7 +14,7 @@ export const Home = () => {
     return(
         <main>
             <section className="welcome_section">
-                <img className="bg" src={steak}></img>
+                <img alt="steak" className="bg" src={steak}></img>
                 <VisibilityDiv classname="welcome_text">
                     <h1 className="welcome_eng">Elite Japanese taste - elite Japanese style</h1>
                 </VisibilityDiv>
