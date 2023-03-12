@@ -23,8 +23,8 @@ export const Home = () => {
                 </VisibilityDiv>
             </section>
             <section className="scroll_wrapper">
-                <p className="scroll_animation">SCROLL</p>
-                <hr className="scroll_animation"/>
+                <p className="animation visible">SCROLL</p>
+                <hr className="animation visible"/>
             </section>
             <ReservationBanner></ReservationBanner>
             <section className="choice_section">

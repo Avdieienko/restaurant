@@ -1,0 +1,37 @@
+.about_restaurant img{
+    width:30vw;
+    height: 30vw;
+    object-fit: cover;
+}
+.about_restaurants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5% 0;
+}
+.about_restaurant{
+    margin: 2% 0;
+}
+.about_restaurant ul{
+    list-style: none;
+    padding-left: 0;
+}
+.about_restaurant h1{
+    color:#C41E1E;
+    font-size: 5vw;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.about_restaurant h2{
+    font-size: 2vw;
+}
+.about_restaurant h3{
+    font-size: 4vw;
+}
+.about_restaurant li{
+    font-size: 2vw;
+}
+.about_restaurant div{
+    padding: 1% 0;
+}

@@ -16,6 +16,9 @@ h1{
 h2{
     all:unset;
 }
+h3{
+    all:unset;
+}
 
 *{
     font-family: "Karantina";
@@ -65,4 +68,28 @@ body{
 
 .banner_button a{
     font-size: 3vw;
+}
+
+@keyframes bottom-animation {
+    0%{
+      transform: translateY(10%);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+
+  .animation{
+    transform: translateY(10%);
+    opacity: 0;
+  }
+
+.visible{
+    transform: translateY(0%);
+    opacity: 1;
+    animation-duration: .7s;
+    animation-name: bottom-animation;
+    animation-timing-function: ease-in-out;
 }
