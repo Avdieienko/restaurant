@@ -64,13 +64,13 @@
 .choice_section{
     display: flex;
     flex-direction: column;
-    margin: 0 4%;
+    margin: 5% 4%;
 }
 
 .choice_row{
     display: flex;
     justify-content: space-around;
-    margin: 0;
+    margin: 5% 0;
 }
 .choice_image img{
     width:30vw;
@@ -78,11 +78,92 @@
 }
 .choice_title{
     font-size: 5vw;
+    color:#C41E1E;
     width:35vw;
+}
+.left{
+    text-align: end;
 }
 .choice_jap{
     width:2vw;
     color:#C41E1E;
     font-weight: bold;
     font-size: 2vw;
+}
+.or_wrap h1{
+    font-size: 6vw;
+}
+.or_wrap{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.choice_banner_wraper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+}
+.your_choice{
+    font-size: 7vw;
+    color:#C41E1E;
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+.jap_choice{
+    font-size: 2vw;
+    color:#C41E1E;
+    padding-top: 0;
+}
+
+.choice_button{
+    margin-top: 3%;
+}
+
+
+.restaurants{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto;
+    align-items: center;
+    text-align: center;
+    row-gap: 5%;
+    padding-bottom: 20%;
+    margin-top: 15%;
+}
+
+.manchester {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.restaurants_heading{
+    grid-column: span 2;
+    padding-bottom: 5%;
+    color:#C41E1E;
+    font-size: 6vw;
+}
+
+.restaurant img{
+    width:30vw;
+    height:30vw;
+    object-fit: cover;
+    border: solid transparent 3px;
+    transition: 0.5s;
+}
+
+.restaurant img:hover{
+    transition: 0.5s;
+    scale: 1.05;
+    border-color: #C41E1E;
+}
+
+.restaurant h1{
+    font-size: 3vw;
+}
+
+.find_button{
+    grid-column: span 2;
+    margin: auto;
 }

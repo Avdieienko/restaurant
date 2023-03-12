@@ -5,7 +5,7 @@ import { About } from './About';
 import { FindUs } from './FindUs';
 import { Reserve } from './Reserve';
 import { Footer } from './Footer';
-import {Route, Routes, Link} from "react-router-dom"
+import {Route, Routes} from "react-router-dom"
 
 function App() {
   return(

@@ -4,6 +4,10 @@ import "./styles/home.css"
 import { ReservationBanner } from "./ReservationBanner"
 import yakiniku from "./images/Yakiniku.webp"
 import sushi from "./images/sushi.webp"
+import { Link } from "react-router-dom"
+import london from "./images/london.webp"
+import manchester from "./images/manchester.webp"
+import southampton from "./images/southampton.webp"
 
 
 export const Home = () => {
@@ -42,13 +46,64 @@ export const Home = () => {
                     <VisibilityDiv classname="choice_jap">
                         <h1>定評ある定番の寿司を食べ続ける</h1>
                     </VisibilityDiv>
-                    <VisibilityDiv classname="choice_title">
+                    <VisibilityDiv classname="choice_title left">
                         <h1>Stay with a proven classic - Sushi</h1>
                     </VisibilityDiv>
                     <VisibilityDiv classname="choice_image">
                         <img alt="Sushi" src={sushi}></img>
                     </VisibilityDiv>
                 </div>
+                <div className="choice_banner_wraper">
+                    <VisibilityDiv classname="your_choice">
+                        <h1>Your choice</h1>
+                    </VisibilityDiv>
+                    <VisibilityDiv classname="jap_choice">
+                        <h2>あなたの選択</h2>
+                    </VisibilityDiv>
+                    <VisibilityDiv classname="banner_button choice_button">
+                        <Link to="/reserve">
+                            <div>
+                                Reserve a table
+                            </div>
+                        </Link>
+                    </VisibilityDiv>
+                </div>
+            </section>
+            <section className="restaurants">
+                <VisibilityDiv classname="restaurants_heading">
+                    <h1>Our restaurants</h1>
+                </VisibilityDiv>
+                <div className="restaurant">
+                    <VisibilityDiv>
+                        <img alt="London" src={london}></img>
+                    </VisibilityDiv>
+                    <VisibilityDiv>
+                        <h1>London</h1>
+                    </VisibilityDiv>
+                </div>
+                <div className="restaurant">
+                    <VisibilityDiv>
+                        <img alt="Southampton" src={southampton}></img>
+                    </VisibilityDiv>
+                    <VisibilityDiv>
+                        <h1>Southampton</h1>
+                    </VisibilityDiv>
+                </div>
+                <div className="restaurant manchester">
+                    <VisibilityDiv>
+                        <img alt="Manchester" src={manchester}></img>
+                    </VisibilityDiv>
+                    <VisibilityDiv>
+                        <h1>Manchester</h1>
+                    </VisibilityDiv>
+                </div>
+                <VisibilityDiv classname="banner_button find_button">
+                    <Link to="/find-us">
+                        <div>
+                           Find us
+                        </div>
+                    </Link>
+                </VisibilityDiv>
             </section>
         </main>
     )
