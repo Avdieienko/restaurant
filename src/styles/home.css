@@ -1,0 +1,88 @@
+.welcome_section{
+    overflow: hidden;
+    position: relative;
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.welcome_text{
+    position: relative;
+}
+.jap{
+    padding-top:3%;
+}
+
+
+.bg{
+    opacity:0.4;
+    position: absolute;
+    left:0;
+    top:1;
+    width:100%;
+    height:auto;
+    z-index: -1;
+}
+
+.welcome_eng{
+    font-size: 6vw;
+}
+.welcome_jap{
+    font-size: 4vw;
+    margin-top: 0;
+    color:#C41E1E;
+    font-weight: bold;
+}
+
+/*----------SCROLL text---------*/
+
+.scroll_wrapper{
+    margin-top: -8%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .scroll_wrapper p{
+    font-size: 2vw;
+    margin-bottom: 0;
+    color:#C41E1E;
+  }
+
+  .scroll_wrapper hr{
+    height:30vh;
+    background-color:#C41E1E;
+    border:none;
+    width:.2vw
+  }
+
+  /*----------Choice Section---------*/
+
+.choice_section{
+    display: flex;
+    flex-direction: column;
+    margin: 0 4%;
+}
+
+.choice_row{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+.choice_image img{
+    width:30vw;
+    height: auto;
+}
+.choice_title{
+    font-size: 5vw;
+    width:35vw;
+}
+.choice_jap{
+    width:2vw;
+    color:#C41E1E;
+    font-weight: bold;
+    font-size: 2vw;
+}

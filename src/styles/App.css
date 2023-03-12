@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Karantina');
+
+
+h1{
+    all: unset;
+}
+h2{
+    all:unset;
+}
+
+*{
+    font-family: "Karantina";
+}
+body{
+    background-color: black;
+    color:white;
+}
+
+
+
+.reservation_banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.reservation_text{
+    margin: 1% 0;
+}
+.reservation_banner h1{
+    font-size: 5vw;
+    color:#C41E1E;
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+
+.reservation_banner h2{
+    font-size: 2vw;
+}
+.banner_button{
+    background-color: #C41E1E;
+    width:20vw;
+    padding: 1%;
+    border-radius: 13px;
+    margin-top: 2%;
+}
+
+.banner_button a{
+    font-size: 3vw;
+}
