@@ -77,7 +77,7 @@ export const Home = () => {
                     <VisibilityDiv>
                         <img alt="London" src={london}></img>
                     </VisibilityDiv>
-                    <VisibilityDiv>
+                    <VisibilityDiv classname="restaurant_title">
                         <h1>London</h1>
                     </VisibilityDiv>
                 </div>
@@ -85,7 +85,7 @@ export const Home = () => {
                     <VisibilityDiv>
                         <img alt="Southampton" src={southampton}></img>
                     </VisibilityDiv>
-                    <VisibilityDiv>
+                    <VisibilityDiv classname="restaurant_title">
                         <h1>Southampton</h1>
                     </VisibilityDiv>
                 </div>
@@ -93,7 +93,7 @@ export const Home = () => {
                     <VisibilityDiv>
                         <img alt="Manchester" src={manchester}></img>
                     </VisibilityDiv>
-                    <VisibilityDiv>
+                    <VisibilityDiv classname="restaurant_title">
                         <h1>Manchester</h1>
                     </VisibilityDiv>
                 </div>

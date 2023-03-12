@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Karantina');
 
 
+::-moz-selection { /* Code for Firefox */
+    color:black;
+    background: #C41E1E;
+  }
+::selection {
+    color:black;
+    background: #C41E1E;
+}
+
 h1{
     all: unset;
 }
@@ -23,6 +32,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 5% 0;
 }
 .reservation_text{
     margin: 1% 0;
@@ -44,6 +54,13 @@ body{
     padding: 1%;
     border-radius: 13px;
     margin-top: 2%;
+    transition: 0.3s;
+}
+
+.banner_button:hover{
+    transition: 0.3s;
+    background-color: #c41e1ec2;
+    scale:1.05;
 }
 
 .banner_button a{

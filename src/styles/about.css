@@ -1,0 +1,33 @@
+.about_grid{
+    display: grid;
+    grid-template-rows: 25% 75%;
+    grid-template-columns: auto auto auto;
+    margin:5% 8%;
+    margin-top: 8%;
+    gap:5%;
+    row-gap: 15%;
+}
+.about_grid img{
+    width:20vw;
+    height:20vw;
+    object-fit: cover;
+}
+.about_text1{
+    font-size: 3vw;
+    grid-column: span 2;
+    width:50%;
+    height:fit-content
+}
+.about_text2{
+    font-size: 3vw;
+    width:70%;
+    padding-left: 5%;
+}
+.about_japan{
+    color:#C41E1E;
+    font-size: 8vw;
+    font-weight: bolder;
+    width:10vw;
+    grid-row: span 2;
+    line-height: 100%;
+}

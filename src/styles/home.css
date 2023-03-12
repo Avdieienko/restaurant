@@ -162,6 +162,9 @@
 .restaurant h1{
     font-size: 3vw;
 }
+.restaurant_title{
+    margin-top: 2%;
+}
 
 .find_button{
     grid-column: span 2;

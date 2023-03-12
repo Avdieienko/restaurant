@@ -9,7 +9,9 @@ export const Footer = () => {
             <hr></hr>
             <div className="footer_wrapper">
                 <div>
-                    <img alt="logo" src={logo}></img>
+                    <Link to="/">
+                        <img alt="logo" src={logo}></img>
+                    </Link>
                 </div>
                 <div className="footer_txt">
                     <h1>Navigation</h1>
