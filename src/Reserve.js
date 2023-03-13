@@ -1,8 +1,10 @@
+import {ReserveForm} from "./Form";
+
 export const Reserve = () => {
     return(
         <main>
             <div>
-                <h1>Reserve</h1>
+                <ReserveForm/>
             </div>
         </main>
     );
