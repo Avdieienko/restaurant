@@ -26,20 +26,20 @@ input, select{
 }
 input, select{
     height: auto;
-    width:20vw;
+    width:30vw;
     font-size: 1.7vw;
 }
 select{
     height: auto;
 }
 label{
-    width:40%;
+    width:25vw;
 }
 .form_row{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width:40%;
+    width:35vw;
     margin-top: 1%;
 }
 
@@ -69,4 +69,38 @@ input[type="checkbox"] {
 
 .reserve_wrap{
     margin: 5% 0%;
+}
+
+.checkbox{
+    margin:2% 0;
+}
+
+button:hover{
+    opacity: 0.85;
+    scale:1.05;
+}
+
+@media (orientation:portrait){
+    form{
+        font-size: 6vw;
+    }
+    input, select{
+        font-size: 5vw;
+        width:40vw;
+    }
+    label{
+        width:40vw
+    }
+    .form_row{
+        width:fit-content;
+        margin-top: 3%;
+    }
+    .error{
+        font-size: 3vw;
+    }
+    form button{
+        font-size: 5vw;
+        width:40vw;
+        padding: 2%;
+    }
 }

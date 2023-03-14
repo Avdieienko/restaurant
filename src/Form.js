@@ -87,9 +87,9 @@ export const ReserveForm = () => (
                     <NumPeople
                         label="Number of people"
                         name="numpeople"
-                        placeholder="Please select number of people"
+                        placeholder="Select number of people"
                     >
-                        <option value="">Please select number of people</option>
+                        <option value="">Select number of people</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -123,7 +123,7 @@ export const ReserveForm = () => (
                         <TimeforWeak/>
                     </TimeField>
                     <DisabilityCheckbox name="disability" type="checkbox"/>
-                    <button disabled={isSubmitting} type="submit">Submit</button>
+                    <button disabled={isSubmitting} type="submit">Reserve</button>
                 </Form>
                 );
             }}

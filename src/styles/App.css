@@ -71,10 +71,10 @@ body{
 }
 @media (orientation:portrait) {
     .reservation_banner h1{
-        font-size: 8vw;
+        font-size: 10vw;
     }
     .reservation_banner h2{
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
     .banner_button{
         width:40vw;
