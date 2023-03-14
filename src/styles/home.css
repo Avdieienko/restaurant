@@ -1,29 +1,26 @@
+
 .welcome_section{
-    overflow: hidden;
-    position: relative;
-    height: 86vh;
+    background-image: url("../images/steak.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.text_wrap{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding-top: 25vh;
 }
-.welcome_text{
-    position: relative;
-}
+
+
 .jap{
     padding-top:3%;
 }
 
 
-.bg{
-    opacity:0.4;
-    position: absolute;
-    left:0;
-    top:1;
-    width:100%;
-    height:auto;
-    z-index: -1;
-}
+
 
 .welcome_eng{
     font-size: 6vw;
@@ -35,16 +32,24 @@
     font-weight: bold;
 }
 
+@media (orientation:portrait){
+    .welcome_eng{
+        font-size:8vw;
+    }
+    .welcome_jap{
+        font-size: 6vw;
+    }
+}
+
 /*----------SCROLL text---------*/
 
 .scroll_wrapper{
-    margin-top: -8%;
-    margin-bottom: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: -25vh;
   }
   .scroll_wrapper p{
     font-size: 2vw;
@@ -59,12 +64,18 @@
     width:.2vw
   }
 
+  @media (orientation:portrait){
+    .scroll_wrapper p{
+        font-size: 6vw;
+      }
+  }
+
   /*----------Choice Section---------*/
 
 .choice_section{
     display: flex;
     flex-direction: column;
-    margin: 5% 4%;
+    margin: 10% 4%;
 }
 
 .choice_row{
@@ -169,4 +180,34 @@
 .find_button{
     grid-column: span 2;
     margin: auto;
+}
+
+@media (orientation:portrait) {
+    .restaurant h1{
+        font-size: 8vw;
+    }
+    .restaurants_heading{
+    font-size: 12vw;
+    }
+    .restaurants{
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: auto;
+        padding-bottom: 50%;
+    }
+    .restaurants img{
+        width:50vw;
+        height:50vw
+    }
+    .restaurants *{
+        grid-column: span 1;
+    }
+    .your_choice{
+        font-size: 10vw;
+    }
+    .jap_choice{
+        font-size: 5vw;
+    }
+    .choice_banner_wraper div{
+        margin:2% 0;
+    }
 }

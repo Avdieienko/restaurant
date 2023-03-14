@@ -1,3 +1,8 @@
+.reserve_section{
+    background-image: url("../images/reserve.webp");
+}
+
+
 .error{
     color:red;
     margin:0;

@@ -22,7 +22,7 @@ export function VisibilityDiv(props) {
     const ref=useRef();
     const isVisible = useIsVisible(ref)
     return(
-        <div className={`${props.classname} animation ${isVisible?"visible":""}`} ref={ref}>
+        <div className={`${props.classname} animation ${isVisible?"onscreen":""}`} ref={ref}>
             {props.children}
         </div>
     )

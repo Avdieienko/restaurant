@@ -2,21 +2,20 @@
     width:8vw;
 }
 
-nav{
+.desktop_nav{
     display:flex;
     justify-content: space-around;
-    margin-left:5%;
-    margin-right:5%;
+    padding-left:5%;
+    padding-right:5%;
     font-size: 2vw;
     color:white;
-    background: transparent;
     font-weight: 100;
 }
-nav div{
+.desktop_nav div{
     padding-left: 3%;
     padding-right: 3%;
 }
-nav p{
+.desktop_nav p{
     text-align: center;
     padding: 1vw 0;
 }
@@ -29,4 +28,121 @@ a:link{
 }
 a:visited{
     color: white;
+}
+
+.portrait_nav{
+    display:none;
+}
+
+.menu {
+    width: 50%;
+    height: 100vh;
+    background-color: #C41E1E;
+    display:block;
+    position: fixed;
+    top: 0;
+    right:-60em;
+    z-index: 1;
+  }
+
+.hidden{
+    transition: ease-out 0.4s;
+  }
+
+.visible{
+    transform:translate(-60em,0);
+    transition: ease-out 0.4s;
+}
+
+
+.portrait_orient img{
+    width:15vw;
+}
+
+
+
+@media (orientation:portrait) {
+    .portrait_nav{
+        display:flex;
+        justify-content: space-between;
+        margin:0% 6%
+    }
+    .desktop_nav{
+        display: none;
+    }
+}
+
+
+.menu_container{
+    list-style: none;
+    font-size: 8vw;
+    margin-top: 50%;
+}
+.menu_container li{
+    margin:40% 0;
+}
+
+nav{
+    position: sticky;
+    top:-7px;
+    background-color: black;
+    z-index: 99;
+}
+@media (orientation:landscape) {
+    nav{
+        top:-25px;
+    }
+}
+
+/*Burger settings*/
+
+
+.burger-menu {
+    height: 100%;
+    width: 4em;
+    padding-top: 1.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .burger-bar {
+    width: 2em;
+    height: 0.2em;
+    background-color: white;
+    border-radius: 0.5em;
+    margin: 3%;
+  }
+
+  .burger-bar.clicked:nth-child(1){
+    transform: rotate(45deg) translate(0.75em, 0.25em);
+    transition: ease-out 0.1s;
+}
+
+.burger-bar.clicked:nth-child(2){
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3){
+    transform: rotate(135deg) translate(-0.42em, -0.05em);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+
+.desktop_nav div p{
+    border-bottom: black solid 2px;
+    transition: 0.5s;
+}
+.desktop_nav div:hover p{
+    border-color: #C41E1E;
+    transition: 0.5s;
 }

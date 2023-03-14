@@ -14,17 +14,18 @@ export const Home = () => {
     return(
         <main>
             <section className="welcome_section">
-                <img alt="steak" className="bg" src={steak}></img>
-                <VisibilityDiv classname="welcome_text">
-                    <h1 className="welcome_eng">Elite Japanese taste - elite Japanese style</h1>
-                </VisibilityDiv>
-                <VisibilityDiv classname="welcome_text jap">
-                    <h2 className="welcome_jap">口の中でとろけるように</h2>
-                </VisibilityDiv>
+                    <div className="text_wrap">
+                        <VisibilityDiv classname="welcome_text">
+                            <h1 className="welcome_eng">Elite Japanese taste - elite Japanese style</h1>
+                        </VisibilityDiv>
+                        <VisibilityDiv classname="welcome_text jap">
+                            <h2 className="welcome_jap">口の中でとろけるように</h2>
+                        </VisibilityDiv>
+                    </div>
             </section>
             <section className="scroll_wrapper">
-                <p className="animation visible">SCROLL</p>
-                <hr className="animation visible"/>
+                <p className="animation onscreen">SCROLL</p>
+                <hr className="animation onscreen"/>
             </section>
             <ReservationBanner></ReservationBanner>
             <section className="choice_section">

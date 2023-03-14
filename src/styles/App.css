@@ -69,6 +69,27 @@ body{
 .banner_button a{
     font-size: 3vw;
 }
+@media (orientation:portrait) {
+    .reservation_banner h1{
+        font-size: 8vw;
+    }
+    .reservation_banner h2{
+        font-size: 3.5vw;
+    }
+    .banner_button{
+        width:40vw;
+        padding: 2% 3%;
+    }
+    .banner_button a{
+        font-size: 5vw;
+    }
+    .reservation_banner{
+        margin-bottom: 17%;
+    }
+    .reservation_banner div{
+        margin:3% 0;
+    }
+}
 
 @keyframes bottom-animation {
     0%{
@@ -81,12 +102,12 @@ body{
     }
   }
 
-  .animation{
+.animation{
     transform: translateY(10%);
     opacity: 0;
-  }
+}
 
-.visible{
+.onscreen{
     transform: translateY(0%);
     opacity: 1;
     animation-duration: .7s;

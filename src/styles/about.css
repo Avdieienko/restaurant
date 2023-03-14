@@ -1,9 +1,14 @@
+
+.about{
+    background-image: url("../images/about_us.webp");
+}
+
 .about_grid{
     display: grid;
     grid-template-rows: 25% 75%;
     grid-template-columns: auto auto auto;
     margin:5% 8%;
-    margin-top: 8%;
+    margin-top: 10%;
     gap:5%;
     row-gap: 15%;
 }

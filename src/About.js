@@ -8,14 +8,15 @@ import { ReservationBanner } from "./ReservationBanner";
 export const About = () => {
     return(
         <main>
-            <section className="welcome_section">
-                <img alt="about us"className="bg" src={about}></img>
-                <VisibilityDiv classname="welcome_text">
-                    <h1 className="welcome_eng">About us</h1>
-                </VisibilityDiv>
-                <VisibilityDiv classname="welcome_text jap">
-                    <h2 className="welcome_jap">私たちに関しては</h2>
-                </VisibilityDiv>
+            <section className="welcome_section about">
+                    <div className="text_wrap">
+                        <VisibilityDiv classname="welcome_text">
+                            <h1 className="welcome_eng">About us</h1>
+                        </VisibilityDiv>
+                        <VisibilityDiv classname="welcome_text jap">
+                            <h2 className="welcome_jap">私たちに関しては</h2>
+                        </VisibilityDiv>
+                    </div>
             </section>
             <section className="about_grid">
                 <VisibilityDiv classname="about_text1">

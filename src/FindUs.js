@@ -9,14 +9,15 @@ import {ReservationBanner} from "./ReservationBanner"
 export const FindUs = () => {
     return(
         <main>
-            <section className="welcome_section">
-                <img alt="find us" className="bg" src={find}></img>
-                <VisibilityDiv classname="welcome_text">
-                    <h1 className="welcome_eng">Find us</h1>
-                </VisibilityDiv>
-                <VisibilityDiv classname="welcome_text jap">
-                    <h2 className="welcome_jap">私たちを見つけてください</h2>
-                </VisibilityDiv>
+            <section className="welcome_section find_section">
+                    <div className="text_wrap">
+                        <VisibilityDiv classname="welcome_text">
+                            <h1 className="welcome_eng">Find us</h1>
+                        </VisibilityDiv>
+                        <VisibilityDiv classname="welcome_text jap">
+                            <h2 className="welcome_jap">私たちを見つけてください</h2>
+                        </VisibilityDiv>
+                    </div>
             </section>
             <section className="about_restaurants">
                 <div className="about_restaurant">
