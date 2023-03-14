@@ -6,10 +6,10 @@ const Email = ({label, ...props}) => {
         <>
         <div className="form_row">
             <label>{label}</label>
-            <input {...field} {...props}>
+            <input {...field} {...props} className={meta.touched && meta.error ? "error_input":""}>
             </input>
         </div>
-            {meta.touched && meta.error ? (<div className="error">{meta.error}</div>) : null}
+            {meta.touched && meta.error ? (<p className="error">{meta.error}</p>) : null}
         </>
     )
 }

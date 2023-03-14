@@ -1,16 +1,15 @@
-import React from 'react';
 import {useField} from "formik";
 
 
 
 const DateForm = ({label, ...props}) => {
-    const [field, meta, helper] = useField(props);
+    const [field] = useField(props);
     return (
         <>
         <label>
             {label}
         </label>
-        <input {...field} {...props}/>
+        <input id="date_input" {...field} {...props}/>
         </>
     );
 };

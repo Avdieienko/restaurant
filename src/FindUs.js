@@ -65,7 +65,7 @@ export const FindUs = () => {
                             <li>Fri-Sat :   12:00-00:00</li>
                         </VisibilityDiv>
                         <VisibilityDiv>
-                            <li>Sun :      12:00-21:00</li>
+                            <li>Sun :      12:00-22:00</li>
                         </VisibilityDiv>
                     </ul>
                 </div>
@@ -90,7 +90,7 @@ export const FindUs = () => {
                             <li>Fri-Sat :   12:00-00:00</li>
                         </VisibilityDiv>
                         <VisibilityDiv>
-                            <li>Sun :      12:00-21:00</li>
+                            <li>Sun :      12:00-22:00</li>
                         </VisibilityDiv>
                     </ul>
                 </div>

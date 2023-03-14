@@ -6,10 +6,10 @@ export const NumPeople = ({label, ...props}) => {
         <>
         <div className="form_row">
             <label>{label}</label>
-            <select {...field} {...props}>
+            <select {...field} {...props} className={meta.touched && meta.error ? "error_input":""}>
             </select>
         </div>
-            {meta.touched && meta.error ? (<div className="error">{meta.error}</div>) : null}
+            {meta.touched && meta.error ? (<p className="error">{meta.error}</p>) : null}
         </>
     )
 }

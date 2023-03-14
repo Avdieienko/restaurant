@@ -94,21 +94,5 @@ body{
     animation-timing-function: ease-in-out;
 }
 
-.error{
-    color:red;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-input, select{
-    width:10vw;
-    margin:2% 0;
-}
-label{
-    padding-right:20%;
-}
-.form_row{
-    display: flex;
-}
+
+

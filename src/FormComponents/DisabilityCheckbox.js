@@ -5,7 +5,7 @@ const DisabilityCheckbox = ({label, ...props}) => {
 
     return(
         <>
-            <div className="form_row">
+            <div className="checkbox">
                 <input {...field} {...props}/>
                     <span>People with disabilities</span>
             </div>
