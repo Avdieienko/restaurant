@@ -9,7 +9,6 @@ import DateForm from './FormComponents/Date';
 import TimeField from './FormComponents/Time';
 import RestaurantForm from './FormComponents/RestaurantForm';
 
-const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const current = new Date()
 var month = current.getMonth() + 1
 if(month<10){
@@ -18,19 +17,6 @@ if(month<10){
 
 const today = `${current.getFullYear()}-${month}-${current.getDate()}`
 
-
-function DateValidation(){
-    if(document.getElementById('date_input')!=undefined){
-        const d = document.getElementById('date_input').valueAsDate
-        const n = d.getUTCDay()
-        if(d.getDate()===current.getDate()){
-            return true;
-        }
-        return(current<d)
-    }
-    return true
-}
-
 const TimeforWeak = ()=>{
     if(document.getElementById('date_input')!=undefined){
         const d = document.getElementById('date_input').valueAsDate
@@ -38,15 +24,15 @@ const TimeforWeak = ()=>{
         if(n>0 && n<5){
             return(
                 <>
-                    <option value="23:00">23:00</option>
+                    <option value="23">23:00</option>
                 </>
             )
         }
         else if(n>4){
             return(
                 <>
-                    <option value="23:00">23:00</option>
-                    <option value="00:00">00:00</option>
+                    <option value="23">23:00</option>
+                    <option value="24">00:00</option>
                 </>
             )
         }
@@ -59,7 +45,7 @@ const onSubmit = async (values, actions) => {
     console.log(actions);
     await new Promise((resolve) => setTimeout(resolve, 1000));
     actions.resetForm();
-    alert(`Name: ${values.name} \nEmail: ${values.email} \nYou have successfully booked a table for ${values.numpeople} at ${values.date} ${values.time} in ${values.restaurant} `)
+    alert(`Name: ${values.name} \nEmail: ${values.email} \nYou have successfully booked a table for ${values.numpeople} at ${values.date} ${values.time}:00 in ${values.restaurant} \nWe will contact you at email for further confirmation`)
   };
 
 export const ReserveForm = () => (
@@ -103,23 +89,20 @@ export const ReserveForm = () => (
                         <option value="Southampton">Southampton</option>
                         <option value="Manchester">Manchester</option>
                     </RestaurantForm>
-                    <div className='form_row'>
-                        <DateForm type="date" name="date" label="Date" placeholder="dd:mm:yy"/>
-                    </div>
-                    {DateValidation() ? null:<p className='error'>You cannot choose past date</p>}
+                    <DateForm type="date" name="date" label="Date" placeholder="dd:mm:yy"/>
                     <TimeField name="time" label="Time" placeholder="Select the time">
                         <option value="">Choose time</option>
-                        <option value="12:00">12:00</option>
-                        <option value="13:00">13:00</option>
-                        <option value="14:00">14:00</option>
-                        <option value="15:00">15:00</option>
-                        <option value="16:00">16:00</option>
-                        <option value="17:00">17:00</option>
-                        <option value="18:00">18:00</option>
-                        <option value="19:00">19:00</option>
-                        <option value="20:00">20:00</option>
-                        <option value="21:00">21:00</option>
-                        <option value="22:00">22:00</option>
+                        <option value="12">12:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                        <option value="18">18:00</option>
+                        <option value="19">19:00</option>
+                        <option value="20">20:00</option>
+                        <option value="21">21:00</option>
+                        <option value="22">22:00</option>
                         <TimeforWeak/>
                     </TimeField>
                     <DisabilityCheckbox name="disability" type="checkbox"/>

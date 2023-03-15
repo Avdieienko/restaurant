@@ -1,7 +1,6 @@
 import {ReserveForm} from "./Form";
 import "./styles/reserve.css"
 import { VisibilityDiv } from "./OnScreen";
-import reserve from "./images/reserve.webp"
 
 export const Reserve = () => {
     return(

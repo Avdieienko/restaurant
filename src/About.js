@@ -1,5 +1,4 @@
 import "./styles/about.css"
-import about from "./images/about_us.webp"
 import yakiniku_about from "./images/Yakiniku_about.webp"
 import { VisibilityDiv } from "./OnScreen";
 import { ReservationBanner } from "./ReservationBanner";

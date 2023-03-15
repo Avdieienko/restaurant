@@ -2,7 +2,6 @@ import "./styles/findus.css"
 import london from "./images/london.webp"
 import manchester from "./images/manchester.webp"
 import southampton from "./images/southampton.webp"
-import find from "./images/find.webp"
 import {VisibilityDiv} from "./OnScreen"
 import {ReservationBanner} from "./ReservationBanner"
 

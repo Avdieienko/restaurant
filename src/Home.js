@@ -1,4 +1,3 @@
-import steak from "./images/home_meat.webp"
 import { VisibilityDiv } from "./OnScreen"
 import "./styles/home.css"
 import { ReservationBanner } from "./ReservationBanner"
@@ -8,10 +7,13 @@ import { Link } from "react-router-dom"
 import london from "./images/london.webp"
 import manchester from "./images/manchester.webp"
 import southampton from "./images/southampton.webp"
+import { useEffect, useState } from "react"
 
 
 export const Home = () => {
+
     return(
+        <>
         <main>
             <section className="welcome_section">
                     <div className="text_wrap">
@@ -107,5 +109,6 @@ export const Home = () => {
                 </VisibilityDiv>
             </section>
         </main>
+        </>
     )
 }

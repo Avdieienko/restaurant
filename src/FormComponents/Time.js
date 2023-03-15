@@ -6,7 +6,7 @@ export const TimeField = ({label, ...props}) => {
         <>
         <div className="form_row">
             <label>{label}</label>
-            <select {...field} {...props} className={meta.touched && meta.error ? "error_input":""}>
+            <select id="time_select" {...field} {...props} className={meta.touched && meta.error ? "error_input":""}>
             </select>
         </div>
             {meta.touched && meta.error ? (<p className="error">{meta.error}</p>) : null}
