@@ -11,7 +11,7 @@ export const ReservationBanner = () =>{
             <h2>Reserve your seat in one of the best Japanese restaurant in the UK</h2>
         </VisibilityDiv>
         <VisibilityDiv classname="banner_button">
-            <Link to="/reserve">
+            <Link to="/restaurant/reserve">
                 <div>
                     Reserve a table
                 </div>

@@ -52,10 +52,10 @@ function App() {
       <>
         <Nav></Nav>
           <Routes>
-            <Route path="/" element={<Home></Home>}/>
-            <Route path="/about" element={<About></About>}/>
-            <Route path = "/find-us" element={<FindUs></FindUs>}/>
-            <Route path="/reserve" element = {<Reserve/>} />
+            <Route path="/restaurant/" element={<Home></Home>}/>
+            <Route path="/restaurant/about" element={<About></About>}/>
+            <Route path = "/restaurant/find-us" element={<FindUs></FindUs>}/>
+            <Route path="/restaurant/reserve" element = {<Reserve/>} />
           </Routes>
         <Footer/>
         <div className={`pop_up ${appeared ? "appeared":""}`}>

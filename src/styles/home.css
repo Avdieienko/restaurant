@@ -202,12 +202,28 @@
         grid-column: span 1;
     }
     .your_choice{
-        font-size: 10vw;
+        font-size: 12vw;
     }
     .jap_choice{
         font-size: 5vw;
     }
     .choice_banner_wraper div{
         margin:2% 0;
+    }
+
+    .choice_title{
+        font-size: 8vw;
+    }
+    .choice_image img{
+        width:35vw;
+    }
+    .choice_jap{
+        font-size: 3vw;
+    }
+    .or_wrap h1{
+        font-size: 10vw;
+    }
+    .or_wrap{
+        margin-bottom: 15%;
     }
 }

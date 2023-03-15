@@ -7,7 +7,6 @@ import { Link } from "react-router-dom"
 import london from "./images/london.webp"
 import manchester from "./images/manchester.webp"
 import southampton from "./images/southampton.webp"
-import { useEffect, useState } from "react"
 
 
 export const Home = () => {
@@ -64,7 +63,7 @@ export const Home = () => {
                         <h2>あなたの選択</h2>
                     </VisibilityDiv>
                     <VisibilityDiv classname="banner_button choice_button">
-                        <Link to="/reserve">
+                        <Link to="/restaurant/reserve">
                             <div>
                                 Reserve a table
                             </div>
@@ -101,7 +100,7 @@ export const Home = () => {
                     </VisibilityDiv>
                 </div>
                 <VisibilityDiv classname="banner_button find_button">
-                    <Link to="/find-us">
+                    <Link to="/restaurant/find-us">
                         <div>
                            Find us
                         </div>

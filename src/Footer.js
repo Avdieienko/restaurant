@@ -9,17 +9,17 @@ export const Footer = () => {
             <hr></hr>
             <div className="footer_wrapper">
                 <div>
-                    <Link to="/">
+                    <Link to="/restaurant/">
                         <img alt="logo" src={logo}></img>
                     </Link>
                 </div>
                 <div className="footer_txt">
                     <h1>Navigation</h1>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About us</Link></li>
-                        <li><Link to="/find-us">Find us</Link></li>
-                        <li><Link to="/reserve">Book a table</Link></li>
+                        <li><Link to="/restaurant/">Home</Link></li>
+                        <li><Link to="/restaurant/about">About us</Link></li>
+                        <li><Link to="/restaurant/find-us">Find us</Link></li>
+                        <li><Link to="/restaurant/reserve">Book a table</Link></li>
                     </ul>
                 </div>
                 <div className="footer_txt">
