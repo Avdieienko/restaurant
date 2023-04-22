@@ -18,7 +18,7 @@ if(month<10){
 const today = `${current.getFullYear()}-${month}-${current.getDate()}`
 
 const TimeforWeak = ()=>{
-    if(document.getElementById('date_input')!=undefined){
+    if(document.getElementById('date_input')!==null){
         const d = document.getElementById('date_input').valueAsDate
         const n = d.getUTCDay()
         if(n>0 && n<5){
@@ -41,8 +41,6 @@ const TimeforWeak = ()=>{
 
 
 const onSubmit = async (values, actions) => {
-    console.log(values);
-    console.log(actions);
     await new Promise((resolve) => setTimeout(resolve, 1000));
     actions.resetForm();
     alert(`Name: ${values.name} \nEmail: ${values.email} \nYou have successfully booked a table for ${values.numpeople} at ${values.date} ${values.time}:00 in ${values.restaurant} \nWe will contact you at email for further confirmation`)

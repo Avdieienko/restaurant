@@ -12,7 +12,7 @@ function TimeforDay (message) {
     return this.test("TimeForDay", message, function(value){
         const {path, createError} = this;
         let ans = 12;
-        if(document.getElementById('date_input')!=undefined){
+        if(document.getElementById('date_input')!==undefined){
             let d = document.getElementById('date_input').valueAsDate;
             if(d.getDate()===current.getDate()){
                 ans = current.getHours();
@@ -27,7 +27,6 @@ function TimeforDay (message) {
         else{
             ans=12;
         }
-        console.log(ans);
         if (value<ans){
             return createError({ path, message: "You cannot choose past time"  });
         }
