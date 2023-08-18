@@ -7,6 +7,7 @@ import { Link } from "react-router-dom"
 import london from "./images/london.webp"
 import manchester from "./images/manchester.webp"
 import southampton from "./images/southampton.webp"
+import { Parallax } from "react-scroll-parallax"
 
 
 export const Home = () => {
@@ -31,29 +32,37 @@ export const Home = () => {
             <ReservationBanner></ReservationBanner>
             <section className="choice_section">
                 <div className="choice_row">
-                    <VisibilityDiv classname="choice_image">
-                        <img alt="Yakiniku" src={yakiniku}></img>
-                    </VisibilityDiv>
-                    <VisibilityDiv classname="choice_title">
+                    <Parallax speed={-5}>
+                        <div className="choice_image">
+                            <img alt="Yakiniku" src={yakiniku}></img>
+                        </div>
+                    </Parallax>
+                    <Parallax speed={15}>
+                    <div className="choice_title">
                         <h1>Unbelievable taste of Yakiniku</h1>
-                    </VisibilityDiv>
+                    </div>
+                    </Parallax>
                     <VisibilityDiv classname="choice_jap">
                         <h1>焼肉とは思えない美味しさ</h1>
                     </VisibilityDiv>
                 </div>
-                <VisibilityDiv classname="or_wrap">
+                <div className="or_wrap">
                     <h1>OR</h1>
-                </VisibilityDiv>
+                </div>
                 <div className="choice_row">
-                    <VisibilityDiv classname="choice_jap">
+                    <div className="choice_jap">
                         <h1>定評ある定番の寿司を食べ続ける</h1>
-                    </VisibilityDiv>
-                    <VisibilityDiv classname="choice_title left">
+                    </div>
+                    <Parallax speed={15}>
+                    <div className="choice_title left">
                         <h1>Stay with a proven classic - Sushi</h1>
-                    </VisibilityDiv>
-                    <VisibilityDiv classname="choice_image">
+                    </div>
+                    </Parallax>
+                    <Parallax speed={-5}>
+                    <div className="choice_image">
                         <img alt="Sushi" src={sushi}></img>
-                    </VisibilityDiv>
+                    </div>
+                    </Parallax>
                 </div>
                 <div className="choice_banner_wraper">
                     <VisibilityDiv classname="your_choice">

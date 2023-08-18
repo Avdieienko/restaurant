@@ -10,6 +10,7 @@ import {Route, Routes} from "react-router-dom"
 import { useState, useEffect } from 'react';
 import logo from "./images/logo.png"
 import BeatLoader from "react-spinners/BeatLoader"
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 function App() {
@@ -51,12 +52,14 @@ function App() {
       :
       <>
         <Nav></Nav>
+        <ParallaxProvider>
           <Routes>
             <Route path="/restaurant/" element={<Home></Home>}/>
             <Route path="/restaurant/about" element={<About></About>}/>
             <Route path = "/restaurant/find-us" element={<FindUs></FindUs>}/>
             <Route path="/restaurant/reserve" element = {<Reserve/>} />
           </Routes>
+        </ParallaxProvider>
         <Footer/>
         <div className={`pop_up ${appeared ? "appeared":""}`}>
             <div className="pop_up_wrapper">
