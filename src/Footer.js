@@ -32,7 +32,7 @@ export const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <h2>Designed & Built by </h2><a rel="noopener noreferrer" target="_blank" className="signature" href="https://avdieienko.com">Dmytro Avdieienko</a>
+            <h2>Designed & Built by </h2><a rel="noopener noreferrer" target="_blank" className="signature" href="https://avdieienko.com">VDNK</a>
         </footer>
     );
 }

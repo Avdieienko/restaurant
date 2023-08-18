@@ -44,10 +44,12 @@ footer h2{
 }
 
 .signature{
-    font-size: 1.5vw;
+    color:#c41e1ec7;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2vw;
     text-decoration: none;
     transition: 0.2s;
-    color:#c41e1ec7;
+    font-weight: bold;
   }
 
 .signature:link{
@@ -73,15 +75,15 @@ footer a:hover{
 
 @media (orientation:portrait) {
     footer h1{
-        font-size: 6vw;
+        font-size: 8vw;
     }
     footer li{
-        font-size: 3vw;
+        font-size: 4vw;
     }
     footer h2{
-        font-size: 2vw;
+        font-size: 4vw;
     }
     .signature{
-        font-size: 2vw;
+        font-size: 8vw;
     }
 }
