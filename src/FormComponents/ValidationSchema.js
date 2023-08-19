@@ -14,10 +14,10 @@ function TimeforDay (message) {
         let ans = 12;
         if(document.getElementById('date_input')!==undefined){
             let d = document.getElementById('date_input').valueAsDate;
-            if(d.getDate()===current.getDate()){
-                ans = current.getHours();
+            if(d.getDate()===current.getDate() && d.getMonth === current.getMonth() && d.getFullYear() === d.getFullYear()){
+                ans = current.getHours()+1;
             }
-            else if(d.getDate()<current.getDate()){
+            else if(d<current){
                 ans=25;
             }
             else{
@@ -44,6 +44,6 @@ export const ValidationSchema =  yup.object().shape({
     disability : yup.boolean().oneOf([true, false], "Invalid choice"),
     restaurant : yup.string().oneOf(["London", "Southampton", "Manchester"], "Invalid restaurant").required("Choose location"),
     date: yup.date().min(today, "You cannot choose past date").required("Required"),
-    time : yup.number().TimeforDay("You cannot choose pasttt bitch time").required("Required"),
+    time : yup.number().TimeforDay("You cannot choose past time").required("Required"),
 });
 
