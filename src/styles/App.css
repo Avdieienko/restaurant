@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Karantina');
+@import url('https://fonts.googleapis.com/css2?family=Karantina&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 
 
@@ -80,10 +80,13 @@
     position: fixed;
     z-index: 99;
     top:90em;
-    left:26%;
+    left:50%;
+    transform: translateX(-50%);
     text-align: center;
-    background-color: grey;
-    color:black;
+    background-color: black;
+    border:rgba(255, 255, 255, 0.39) 1px solid;
+    border-radius: 10px;
+    color:white;
     opacity: 0.85;
     padding: 3%;
     transition: ease-out 2s;
@@ -93,30 +96,31 @@
     align-items: center;
     flex-direction: column;
 }
-
-.pop_up_wrapper h1{
-    font-size: 2vw;
+.pop_up_attention{
+  color:red;
+  font-size: 3vw;
 }
+
 .pop_up_wrapper p{
     font-size: 1.5vw;
 }
 
 .close_button{
     font-size: 2vw;
-    background-color: white;
-    padding: 1% 3%;
-    border-radius: 6px;
+    background-color: red;
+    padding: 1% 6%;
+    border-radius: 13px;
     cursor : pointer
 }
 
 .appeared{
     transition: ease-out 2s;
-    transform: translate(0,-80em);
+    transform: translate(-50%,-80em);
 }
 
 @media (orientation:portrait) {
-  .pop_up_wrapper h1{
-    font-size: 4vw;
+  .pop_up_attention{
+    font-size: 8vw;
   }
   .pop_up_wrapper p{
       font-size: 3vw;

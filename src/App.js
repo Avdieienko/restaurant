@@ -63,7 +63,7 @@ function App() {
         <Footer/>
         <div className={`pop_up ${appeared ? "appeared":""}`}>
             <div className="pop_up_wrapper">
-                <h1>Attention</h1>
+                <h1 className='pop_up_attention'>Attention</h1>
                 <p>This webpage is imaginary and was created as a personal project for portfolio. Nothing here is real.</p>
                 <div className="close_button" onClick={popClick} role="button">Close</div>
             </div>
